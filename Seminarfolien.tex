@@ -20,6 +20,8 @@
 \institute{Statistikstelle der Stadt Passau}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
+\setbeamertemplate{frame footer}{Grunlagen der Kommunalstatistk - Bamberg, Herbst 2020}
+
 \begin{document}
 
 \maketitle
@@ -61,8 +63,8 @@
 
 
 
-
-\begin{frame}[fragile]{Ebenen}
+\subsection{Rechtliche Ebenen}
+\begin{frame}[fragile]{Rechtliche Ebenen}
     \metroset{block=fill}
     \begin{block}{Europarecht: EU-Statistikverordnung}
     (und Regelungen mit Statistikbezug in anderen Verordnungen, wie z.B. EU-DSGVO, Durchführungsverordnungen zum Zensus, ...)
@@ -72,25 +74,36 @@
             \begin{block}{Landesrecht: Statistikgesetze der Länder, z.B. BayStatG}
             (und Regelungen mit Statistikbezug in anderen Landesgesetzen, z.B. zum Zensus)
                 \begin{block}{Satzungen und Verordnungen auf kommunaler Ebene}
-                (z.B. Mietspiegel-Erhebungssatzung
+                (z.B. Mietspiegel-Erhebungssatzung)
                 \end{block}
             \end{block}
         \end{block}            
     \end{block}
 \end{frame}
 
-\subsection{Tricks}
+\subsection{Datenschutz}
 
-{
-    \metroset{titleformat frame=smallcaps}
-\begin{frame}{Small caps}
-	This frame uses the \texttt{smallcaps} titleformat.
 
-	\begin{alertblock}{Potential Problems}
-		Be aware, that not every font supports small caps. If for example you typeset your presentation with pdfTeX and the Computer Modern Sans Serif font, every text in smallcaps will be typeset with the Computer Modern Serif font instead.
-	\end{alertblock}
+\begin{frame}{Datenschutz}
+
+	\begin{block}{EU-DSGVO}
+		Informationelle Selbstbestimmung, d.h. keine Verarbeitung personenbezogener/-beziehbarer Daten ohne Einwilligung oder berechtigte gesetzliche Regelung
+	\end{block}
+      \begin{exampleblock}{Verarbeitung}
+        Erheben, Speichern, Auswerten, Zusammenfassen, Querverweisen, Aggregieren, Löschen, Verändern, ...
+      \end{exampleblock}
+      \begin{exampleblock}{Personendaten}
+        Nur natürliche Personen, keine juristische Personen, Firmen, Betriebe, ...
+      \end{exampleblock}      
+      \begin{exampleblock}{Einwilligung}
+        \begin{itemize}
+            \item Informiert (Was beinhaltet die Einwilligung?)
+            \item Dokumentiert (Nachweis der Einwilligung muss möglich sein)
+            \item Reglementiert (Wie komme ich aus der Nummer wieder raus?)
+        \end{itemize}
+      \end{exampleblock}	
 \end{frame}
-}
+
 
 {
 \metroset{titleformat frame=allsmallcaps}
