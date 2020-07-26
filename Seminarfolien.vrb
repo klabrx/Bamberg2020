@@ -1,19 +1,15 @@
-\section[Rechtliche Rahmenbedingungen]{Rechtliche Rahmenbedingungen}
-\subsection{Rechtliche Ebenen}
-\begin{frame}[fragile]{Rechtliche Ebenen}
-    \metroset{block=fill}
+\frametitle{Rechtliche Ebenen}
+\metroset{block=fill}
     \begin{block}{Europarecht: EU-Statistikverordnung}
     (und Regelungen mit Statistikbezug in anderen Verordnungen, wie z.B. EU-DSGVO\cite{eudsgvo}, Durchführungsverordnungen zum Zensus, ...)
         \begin{block}{Bundesrecht: Bundesstatistikgesetz}
         (und Regelungen mit Statistikbezug in anderen Bundesgesetzen, z.B. zum Zensus, SGB, ...)
-        
+
             \begin{block}{Landesrecht: Statistikgesetze der Länder, z.B. BayStatG}
             (und Regelungen mit Statistikbezug in anderen Landesgesetzen, z.B. zum Zensus)
                 \begin{block}{Satzungen und Verordnungen auf kommunaler Ebene}
                 (z.B. Mietspiegel-Erhebungssatzung)
                 \end{block}
             \end{block}
-        \end{block}            
+        \end{block}
     \end{block}
-\end{frame}
-
