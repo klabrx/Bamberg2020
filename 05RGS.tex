@@ -1,0 +1,51 @@
+\section{Kleinräumige Gliederung}
+\begin{frame}[allowframebreaks]{Kleinräumige Gliederung}
+    \begin{exampleblock}{Alles, was passiert, passiert irgendwo.}
+        Räumliche Gliederungssysteme erlauben die Zuordnung von Beobachtungen, Ereignissen, Erhebungsergebnissen zu geografischen Einheiten.
+    \end{exampleblock}
+    Drei Gliederungssysteme sind in der Kommunalstatistik relevant:
+    \begin{description}
+        \item[Nationalitätenschlüssel] steht für eine rechtliche Staatsangehörigkeit, ersatzweise auch für den Migrationshintergrund. Dieser 3-stellige sog. "BEV-Code"\cite{bevcode} wird von statistischen Bundesamt (destatis) regelmäßig aktualisiert und veröffentlicht.
+        \framebreak
+        \item[Allgemeiner Gebietsschlüssel]\cite{ags} bezeichnet die Zugehörigkeit zu einer Gemeinde. Der hierarchische Aufbau erlaubt auch die Zuordnung einer Gemeinde (am Beispiel Bayern) zum Kreis, Bezirk und Bundesland.
+        \item[Kleinräumige Gliederung]\cite{agk} steht für eine untergemeindliche Gebietseinteilung und Stadtteile, Bezirke, Distrikte, Reviere, Kieze \dots
+    \end{description}
+\end{frame}
+
+\begin{frame}{Hierarchischer Aufbau}
+    \begin{block}{Das Gebiet der Stadt Passau (AGS 09262000) besteht aus \dots}
+        \begin{block}{5 Prognoseräumen (1-5),}
+            diese bestehen aus \dots
+            \begin{block}{16 Stadtteilen (11-52),}
+                diese bestehen aus \dots
+                    \begin{block}{Blöcken (11001-52035),}
+                        diese bestehen aus \dots
+                    \begin{block}{Blockseiten (1100101-5203507),}
+                        an denen schießlich die Adressen als georeferenzierte Punkte liegen.
+                    \end{block}
+                    \end{block}
+                \end{block}
+        \end{block}
+    \end{block}
+    Somit steht die KlGl-Nummer 1100101 (bzw. 1-1-001-01) für Prognoseraum 1, Stadtteil 1, Block 001, Blockseite 01). Die Bezeichnungen in anderen Städten können abweichen, das Prinzip bleibt gleich.
+
+    
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Ausschnittsbeispiel}
+\includegraphics[width=\textwidth]{images/klgl01.png}
+\framebreak
+\includegraphics[width=\textwidth]{images/klgl02.png}  
+\end{frame}
+
+\begin{frame}{Zuordnung von Gebietseinteilungen}
+    \begin{exampleblock}{Grundsatz 1}
+        Nicht die Adresse gehört unmittelbar zum Gebiet (Schulsprengel, Stimmbezirk, Verkehrszelle, \dots), sondern der Block\footnote{In begründeten Einzelfällen kann es auch die Blockseite sein, im Extremfall sogar ein Blockseitenabschnitt.}.
+    \end{exampleblock}
+    \begin{exampleblock}{Grundsatz 2}
+        Jedes Gebiet setzt sich aus ganzen, nicht mehr weiter unterteilten Blöcken zusammen. Kein Block gehört zu zwei verschiedenen Schulsprengeln.
+    \end{exampleblock}
+    \begin{exampleblock}{Grundsatz 3}
+        Wenn alle Blöcke eines Stadtteils zum selben Gebiet gehören, erfolgt die Zuweisung nicht auf Block- sondern gleich auf Stadtteilebene und wir nach unten weitervererbt.
+    \end{exampleblock}
+\end{frame}
