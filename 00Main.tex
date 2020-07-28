@@ -1,25 +1,29 @@
 \documentclass[10pt]{beamer}
-
+\usepackage[utf8]{inputenc}
+\usepackage[greek,ngerman]{babel}
 \usetheme[progressbar=frametitle]{metropolis}
-\usepackage{appendixnumberbeamer}
+
+
+% \usepackage{appendixnumberbeamer}
+% resets frame number counter to 0 when reaching the \appendix command
+
 \setbeamertemplate{frametitle continuation}{\usebeamerfont{frametitle}\insertcontinuationcount}
 
-\usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
+% \usepackage{booktabs}
+% Erlaubt das Einfügen von Tabellen in druckreifem Layout
 
-\usepackage{pgfplots}
-\usepgfplotslibrary{dateplot}
+% \usepackage{pgfplots}
+% \usepgfplotslibrary{dateplot}
+% für hochwertige Funktionsplots
 
-\usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+% \usepackage{xspace}
+% \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+% Zur Darstellung des Themennamens in Fettdruck
 
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
-
-
-
-\usepackage{xpatch}
+\usepackage{xpatch} %einfacheres Patchen von Kommandos
 
 \makeatletter
 \patchcmd\beamer@@tmpl@frametitle{\insertframetitle}{\insertsection: \insertframetitle}{}{}
