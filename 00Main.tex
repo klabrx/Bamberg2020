@@ -1,5 +1,6 @@
 \documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 \usepackage[greek,ngerman]{babel}
 \usetheme[progressbar=frametitle]{metropolis}
 
@@ -7,7 +8,7 @@
 % \usepackage{appendixnumberbeamer}
 % resets frame number counter to 0 when reaching the \appendix command
 
-\setbeamertemplate{frametitle continuation}{\usebeamerfont{frametitle}\insertcontinuationcount}
+% \setbeamertemplate{frametitle continuation}{\insertcontinuationcount}
 
 % \usepackage{booktabs}
 % Erlaubt das Einfügen von Tabellen in druckreifem Layout
@@ -43,7 +44,7 @@
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
 \setbeamertemplate{frame footer}{Grundlagen der Kommunalstatistk - Bamberg, Herbst 2020}
-% \setbeamertemplate{frametitle continuation}{\arabic{\insertcontinuationcount}}
+\setbeamertemplate{frametitle continuation}{\insertcontinuationcount}
 
 \begin{document}
 
@@ -59,9 +60,20 @@
 \include{02Rechtliches}
 \include{03Datenschutz}
 \include{04Abschottung}
-\include{05Datenquellen}
-\include{06RGS}
-\include{07VDST}
+\include{05Aufgabenfelder}
+\include{06Datenlogistik}
+\include{07Schluesselsysteme}
+\include{08KlGl}
+\include{09Softwareueberblick}
+\include{10Datenquellen}
+\include{11AmtlicheStatistik}
+\include{12InterkommunalerDatenaustausch}
+\include{13VDStUndKosis}
+\include{14AGs}
+\include{15ZensusVorbereitung}
+\include{16Erfahrungsaustausch}
+
+\include{99Referenzen}
 
 
 
@@ -71,14 +83,13 @@
 
 
 
-\section{Referenzen}
-\begin{frame}[allowframebreaks]{Links und Literatur}
+% \section{Referenzen}
+% \begin{frame}[allowframebreaks]{Links und Literatur}
 
-\printbibliography[
-heading=bibintoc,
-title={Link- und Literatursammlung}
-]
-
-\end{frame}
+% \printbibliography[
+% heading=bibintoc,
+% title={Link- und Literatursammlung}
+% ]
+% \end{frame}
 
 \end{document}
