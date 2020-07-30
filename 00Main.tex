@@ -1,25 +1,30 @@
 \documentclass[10pt]{beamer}
-
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[greek,ngerman]{babel}
 \usetheme[progressbar=frametitle]{metropolis}
-\usepackage{appendixnumberbeamer}
-\setbeamertemplate{frametitle continuation}{\usebeamerfont{frametitle}\insertcontinuationcount}
 
-\usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
 
-\usepackage{pgfplots}
-\usepgfplotslibrary{dateplot}
+% \usepackage{appendixnumberbeamer}
+% resets frame number counter to 0 when reaching the \appendix command
 
-\usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+% \setbeamertemplate{frametitle continuation}{\insertcontinuationcount}
+
+% \usepackage{booktabs}
+% Erlaubt das Einfügen von Tabellen in druckreifem Layout
+
+% \usepackage{pgfplots}
+% \usepgfplotslibrary{dateplot}
+% für hochwertige Funktionsplots
+
+% \usepackage{xspace}
+% \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+% Zur Darstellung des Themennamens in Fettdruck
 
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
-
-
-
-\usepackage{xpatch}
+\usepackage{xpatch} %einfacheres Patchen von Kommandos
 
 \makeatletter
 \patchcmd\beamer@@tmpl@frametitle{\insertframetitle}{\insertsection: \insertframetitle}{}{}
@@ -39,23 +44,36 @@
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
 \setbeamertemplate{frame footer}{Grundlagen der Kommunalstatistk - Bamberg, Herbst 2020}
-% \setbeamertemplate{frametitle continuation}{\arabic{\insertcontinuationcount}}
+\setbeamertemplate{frametitle continuation}{\insertcontinuationcount}
 
 \begin{document}
 
 \maketitle
 
-\begin{frame}
+\section*{TOC}
+\begin{frame}[allowframebreaks]{Themenübersicht}
   \setbeamertemplate{section in toc}[sections numbered]
   \tableofcontents[hideallsubsections]
 \end{frame}
 
 \include{01Intro}
 \include{02Rechtliches}
-\include{03Abschottung}
-\include{04Datenquellen}
-\include{05RGS}
-\include{06VDSt}
+\include{03Datenschutz}
+\include{04Abschottung}
+\include{05Aufgabenfelder}
+\include{06Datenlogistik}
+\include{07Schluesselsysteme}
+\include{08KlGl}
+\include{09Softwareueberblick}
+\include{10Datenquellen}
+\include{11AmtlicheStatistik}
+\include{12InterkommunalerDatenaustausch}
+\include{13VDStUndKosis}
+\include{14AGs}
+\include{15ZensusVorbereitung}
+\include{16Erfahrungsaustausch}
+
+\include{99Referenzen}
 
 
 
@@ -65,14 +83,13 @@
 
 
 
-\section{Referenzen}
-\begin{frame}[allowframebreaks]{Links und Literatur}
+% \section{Referenzen}
+% \begin{frame}[allowframebreaks]{Links und Literatur}
 
-\printbibliography[
-heading=bibintoc,
-title={Link- und Literatursammlung}
-]
-
-\end{frame}
+% \printbibliography[
+% heading=bibintoc,
+% title={Link- und Literatursammlung}
+% ]
+% \end{frame}
 
 \end{document}
