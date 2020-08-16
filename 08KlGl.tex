@@ -1,9 +1,9 @@
-\section{Kleinräumige Gliederung}
-\begin{frame}[allowframebreaks]{Kleinräumige Gliederung}
+\section{Räumliche Gliederung}
+\begin{frame}[allowframebreaks]{Räumliche Gliederung}
     \begin{exampleblock}{Alles, was passiert, passiert irgendwo.}
         Räumliche Gliederungssysteme erlauben die Zuordnung von Beobachtungen, Ereignissen, Erhebungsergebnissen zu geografischen Einheiten.
     \end{exampleblock}
-    Drei Gliederungssysteme sind in der Kommunalstatistik relevant:
+    Drei Gliederungssysteme sind in der Kommunalstatistik besonders relevant:
     \begin{description}
         \item[Nationalitätenschlüssel] steht für eine rechtliche Staatsangehörigkeit, ersatzweise auch für den Migrationshintergrund. Dieser 3-stellige sog. "BEV-Code" wird von statistischen Bundesamt (destatis) regelmäßig aktualisiert und veröffentlicht.
         \framebreak
@@ -12,20 +12,22 @@
     \end{description}
 \end{frame}
 
+\begin{frame}{Aus der Beschreibung von AGK}
+    \textit{Für zahlreiche Aufgaben in einer Kommune werden aktuelle Informationen vor allem räumlich differenziert und nicht nur für die Gesamtstadt benötigt. \dots Die Kleinräumige Gliederung als Lokalisierungs- und Zuordnungssystem ist ein unverzichtbares Organisationsmittel der Kommunalverwaltung für Statistik, Planung und Verwaltungsvollzug und gründet sich auf Straße, Hausnummer und hierarchischer Gebietsgliederung, d.h. auf die Adresse als Ortsangabe und eine bis zum (Bau-)Block und zur Blockseite differenzierte räumliche Gliederung des gesamten Gemeindegebietes. 
+    Aus diesen Grundbestandteilen des statistischen Raumbezugssystems lassen sich alle anderen Gebietseinteilungen des Stadtgebiets wie z. B. Stimmbezirke, Sozialregionen, Verkehrszellen oder Schulsprengel mosaikartig zusammenstellen und dafür die zugehörigen Sachdaten aggregieren.}
+
+\end{frame}
+
+
+
 \begin{frame}{Hierarchischer Aufbau}
     \begin{block}{Das Gebiet der Stadt Passau (AGS 09262000) besteht aus \dots}
-        \begin{block}{5 Prognoseräumen (1-5),}
-            diese bestehen aus \dots
-            \begin{block}{16 Stadtteilen (11-52),}
-                diese bestehen aus \dots
-                    \begin{block}{Blöcken (11001-52035),}
-                        diese bestehen aus \dots
-                    \begin{block}{Blockseiten (1100101-5203507),}
-                        an denen schießlich die Adressen als georeferenzierte Punkte liegen.
-                    \end{block}
-                    \end{block}
-                \end{block}
-        \end{block}
+        \begin{description}
+            \item[5 Prognoseräumen:] Erste Stelle der KlGl-Nummer (1-5), bestehend aus
+            \item[16 Stadtteile:] Erste zwei Stellen der KlGl-Nummer (11-52), bestehend aus
+            \item[Blöcke:] Erste fünf stellen der KlGl-Nummer (11001-52035), bestehend aus
+            \item[Blockseiten:] Alle 7 Stellen der KlGl-Nummer
+        \end{description}
     \end{block}
     Somit steht die KlGl-Nummer 1100101 (bzw. 1-1-001-01) für Prognoseraum 1, Stadtteil 1, Block 001, Blockseite 01). Die Bezeichnungen in anderen Städten können abweichen, das Prinzip bleibt gleich.
 
