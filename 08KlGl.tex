@@ -52,3 +52,25 @@
         Wenn alle Blöcke eines Stadtteils zum selben Gebiet gehören, erfolgt die Zuweisung nicht auf Block- sondern gleich auf Stadtteilebene und wir nach unten weitervererbt.
     \end{alertblock}
 \end{frame}
+
+\begin{frame}{Rudimentärversion einer KlGl}
+    \begin{table}[]
+        \centering
+        \begin{tabular}{llllll}
+             \textbf{StrID} & \textbf{HsNr} & \textbf{Zusatz} & \textbf{KlGl} & \textbf{Gebiet 1} & \textbf{Gebiet 2} \\
+             12345 & 0001 & C & 1207233 & 01 (Stadtmitte) & \dots \\
+             12345 & 0001 & D & 1207233 & 01 (Stadtmitte) & \dots \\
+             12345 & 0002 &   & 1207234 & 01 (Stadtmitte) & \dots \\
+             12345 & 0003 &   & 1207233 & 01 (Stadtmitte) & \dots \\
+             12345 & 0004 &   & 1207234 & 01 (Stadtmitte) & \dots \\
+             & 
+        \end{tabular}
+    \end{table}
+    In Textformat:
+    \newline
+    \texttt{123450001C 120723301\dots} \newline
+    \texttt{123450001D 120723301\dots} \newline
+    \texttt{123450002  120723301\dots} \newline
+    \texttt{123450003  120723301\dots} \newline
+    \texttt{123450004  120723301\dots}
+\end{frame}

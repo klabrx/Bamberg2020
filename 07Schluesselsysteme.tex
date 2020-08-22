@@ -37,21 +37,49 @@
     \end{frame}
     \begin{frame}{Aufbau des BEV-Code}
         \begin{description}
-            \item[000:] Deutschland, somit
-            \item[(1-5)xx] Ausland, geordnet nach Kontinenten:
-                 \begin{description}
-                    \item[1xx:] Europa
-                    \item[2xx:] Afrika
-                    \item[3xx:] Amerika(s)
-                    \item[4xx:] Asien
-                    \item[5xx:] Australien und Ozeanien
-                 \end{description}
-            
-        \end{description}
-        
+            \item[000:] Deutschland
+            \item[1xx:] Europa (ohne D)
+            \item[2xx:] Afrika
+            \item[3xx:] Amerika(s)
+            \item[4xx:] Asien
+            \item[5xx:] Australien und Ozeanien
+            \item[unterhalb der ``kontinentalen''-Ebene:] grobe alphabetische Reihenfolge
+            \end{description}
+    \end{frame}
+    \begin{frame}{BEV-Code-Problem an Beispiel Jugoslawien}
+        \begin{table}
+    \centering
+        \begin{tabular}{llll}
+            \textbf{Staat}  & \textbf{Code} & \textbf{gültig von} & \textbf{gültig bis}\\
+                Bosnien und Herzegowina & 122 & 01.03.1992 & \dots             \\
+                Jugoslawien & 120 & \dots & 26.04.1992      \\
+                Bundesrepublik Jugoslawien & 138 & 27.04.1992 & 04.02.2003      \\
+                Kosovo & 150 & 17.02.2008 & \dots \\
+                Kroatien & 130 & 25.06.1991 & \dots \\
+                Montenegro & 141 & 03.06.2006 & \dots \\
+                Nordmazedonien & 144 & 08.09.1991 & \dots \\
+                Serbien und Montenegro & 132 & 05.02.2003 & 02.06.2006 \\ 
+                Serbien (mit Kosovo) & 133 & 03.06.2006 & 16.02.2008 \\
+                Serbien & 133 & 17.02.2008 & \dots \\
+                Slowenien & 131 & 25.06.1991 & \dots \\
+        \end{tabular}
+    \end{table}
     \end{frame}
     
     \begin{frame}{GV-ISys}
-
+        \begin{block}{Gemeindeverzeichnis-Informationssystem}
+            \begin{itemize}
+                \item veröffentlicht von destatis
+                \item enthält:
+                    \begin{itemize}
+                        \item Amtlicher Regionalschlüssel (ARS)
+                        \item Amtlicher Gemeindeschlüssel (AGS)
+                        \item PLZ des Verwaltungssitzes
+                        \item Fläche in km\textsuperscript{2}
+                        \item Einwohnerzahl (insgesamt/männlich/weiblich)
+                        \item siedlungsstrukturelle Typisierungen
+                    \end{itemize}
+            \end{itemize}
+        \end{block}
     \end{frame}
     
