@@ -1,0 +1,183 @@
+\section{Schlüsselsysteme}
+    \begin{frame}{Beispiele}
+        \begin{description}
+            \item[WZ2008:] Klassifikation der Wirtschaftszweige
+            \item[Nationalitätenschlüssel:] Staats- und Gebietssystematik
+            \item[AGS:] Gemeindeverzeichnis-Informationssystem GV-ISys
+        \end{description}
+    \end{frame}
+    \begin{frame}{WZ2008}
+        \begin{itemize}
+            \item Grundlage der Aggregation volkswirtschaflticher Gesamtrechnungen
+            \item veröffentlicht von destatis (im Verbund mit einer Vielzahl internationaler Klassifikationssysteme \dots die aktuelle Veröffentlichung umfasst 828(!) Seiten)
+            \item hierarchisch aufgebaut (z.B.) im Abschnitt P (Erziehung und Unterricht):
+                \begin{description}
+                    \item[85] Erziehung und Unterricht 
+                    \item[85.5] Sonstiger Unterricht
+                    \item[85.59] Sonstiger Unterricht a.n.g.\footnote{``anderweitig nicht genannt''}
+                    \item[85.59.2] Berufliche Erwachsenenbildung
+                \end{description}
+        \end{itemize}
+      
+    \end{frame}
+    \begin{frame}{Nationalitätenschlüssel}
+        \begin{itemize}
+            \item veröffentlicht von destatis (in internationaler Abstimmung)
+            \item enthält:
+            \begin{itemize}
+                \item Staatsnamen in Kurzform (``Vatikanstadt''),
+                \item \dots und in Vollform (``Staat Vatikanstadt''),
+                \item Staatsangehörigkeit (``vatikanisch''),
+                \item  Kontinent (``EUR''),
+                \item zwei- und dreistelliger ISO-3166-1-Code (`VA''\footnote{Genutzt insb. als Top Level Domain (TLD) im WWW}, ``VAT''),
+                \item Destatis-BEV-Code (``167'')\footnote{Dieser BEV-Code entspricht dem in der Bevölkerungsstatistik verwendeten Nationalitätenschlüssel im engeren Sinn, nicht zu verwechseln mit anderen Schlüsseln, die für den Internationalen Handel verwendet werden.} 
+            \end{itemize}    
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Aufbau des BEV-Code}
+        \begin{description}
+            \item[000:] Deutschland
+            \item[1xx:] Europa (ohne D)
+            \item[2xx:] Afrika
+            \item[3xx:] Amerika(s)
+            \item[4xx:] Asien
+            \item[5xx:] Australien und Ozeanien
+            \item[unterhalb der ``kontinentalen''-Ebene:] grobe alphabetische Reihenfolge
+            \end{description}
+    \end{frame}
+    \begin{frame}{BEV-Code-Problem an Beispiel Jugoslawien}
+        \begin{table}
+    \centering
+        \begin{tabular}{llll}
+            \textbf{Staat}  & \textbf{Code} & \textbf{gültig von} & \textbf{gültig bis}\\
+                Bosnien und Herzegowina & 122 & 01.03.1992 & \dots             \\
+                Jugoslawien & 120 & \dots & 26.04.1992      \\
+                Bundesrepublik Jugoslawien & 138 & 27.04.1992 & 04.02.2003      \\
+                Kosovo & 150 & 17.02.2008 & \dots \\
+                Kroatien & 130 & 25.06.1991 & \dots \\
+                Montenegro & 141 & 03.06.2006 & \dots \\
+                Nordmazedonien & 144 & 08.09.1991 & \dots \\
+                Serbien und Montenegro & 132 & 05.02.2003 & 02.06.2006 \\ 
+                Serbien (mit Kosovo) & 133 & 03.06.2006 & 16.02.2008 \\
+                Serbien & 133 & 17.02.2008 & \dots \\
+                Slowenien & 131 & 25.06.1991 & \dots \\
+        \end{tabular}
+    \end{table}
+    \end{frame}
+    \begin{frame}{GV-ISys}
+        \begin{block}{Gemeindeverzeichnis-Informationssystem}
+            \begin{itemize}
+                \item veröffentlicht von destatis
+                \item enthält:
+                    \begin{itemize}
+                        \item Amtlicher Regionalschlüssel (ARS)
+                        \item Amtlicher Gemeindeschlüssel (AGS)
+                        \item PLZ des Verwaltungssitzes
+                        \item Fläche in km\textsuperscript{2}
+                        \item Einwohnerzahl (insgesamt/männlich/weiblich)
+                        \item siedlungsstrukturelle Typisierungen
+                    \end{itemize}
+            \end{itemize}
+        \end{block}
+    \end{frame}
+    \begin{frame}[allowframebreaks]{Beispiele für den AGS}
+        \begin{block}{Hansestadt Stralsund, AGS 13073088}
+            \begin{description}
+                \item[13] Mecklenburg-Vorpommern
+                \item[0] Regierungsbezirk (gibt es nicht in MV, deshalb 0)
+                \item[73] LKr. Vorpommern-Rügen (7 für LKr, davon die Nr. 3)
+                \item[088] Gemeinde Nr. 88 im Kreis
+            \end{description}
+        \end{block}
+        \framebreak
+        \begin{block}{Paderborn, AGS 05774032}
+            \begin{description}
+                \item[05] Nordrhein-Westfalen
+                \item[7] Regierungsbezirk Detmold
+                \item[74] LKr. Paderborn (7 für LKr, davon die Nr. 4)
+                \item[032] Gemeinde Nr. 32 im LKr\footnote{eigentlich die Nr.8, aber hier wird in 4er-Schritten durchgezählt.}
+            \end{description}
+        \end{block}        
+        \framebreak
+        \begin{block}{Neumünster, AGS 01004000}
+            \begin{description}
+                \item[01] Schleswig-Holstein
+                \item[0] Regierungsbezirk (gibt es nicht in SH, deshalb 0)
+                \item[04] 4. Kreisfreie Stadt (0 für KrfSt) in SH
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block}        
+        \framebreak
+        \begin{block}{Hamm, AGS 05915000}
+            \begin{description}
+                \item[05] Nordrhein-Westfalen
+                \item[9] Regierungsbezirk Arnsberg
+                \item[15] 5. Kreisfreie Stadt (1 für KrfSt) in NW
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block}
+        \framebreak
+        \begin{block}{Neuss, AGS 05162024}
+            \begin{description}
+                \item[05] Nordrhein-Westfalen
+                \item[1] Regierungsbezirk Düsseldorf
+                \item[62] LKr Rheinkreis Neuss
+                \item[024] Gemeinde Nr. 24 im LKr
+            \end{description}
+        \end{block}
+        \framebreak
+        \begin{block}{Tübingen, AGS 08416041}
+            \begin{description}
+                \item[08] Baden-Württemberg
+                \item[4] Regierungsbezirk Tübingen
+                \item[16] LKr Tübingen
+                \item[041] Gemeinde Nr. 41 im LKr
+            \end{description}
+        \end{block} 
+        \framebreak
+        \begin{block}{Erlangen, AGS 09562000}
+            \begin{description}
+                \item[09] Bayern
+                \item[5] Regierungsbezirk Mittelfranken
+                \item[62]  2. Kreisfreie Stadt (6 für KrfSt) in Mittelfranken
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block} 
+        \framebreak
+        \begin{block}{Schwabach, AGS 09565000}
+            \begin{description}
+                \item[09] Bayern
+                \item[5] Regierungsbezirk Mittelfranken
+                \item[62]  5. Kreisfreie Stadt (6 für KrfSt) in Mittelfranken
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block}
+        \framebreak
+        \begin{block}{Passau, AGS 09262000}
+            \begin{description}
+                \item[09] Bayern
+                \item[2] Regierungsbezirk Niederbayern
+                \item[62]  2. Kreisfreie Stadt (6 für KrfSt) in Niederbayern
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block}
+        \framebreak
+        \begin{block}{Salzgitter, AGS 03102000}
+            \begin{description}
+                \item[03] Niedersachsen
+                \item[1] Statistische Region Braunschweig
+                \item[02]  2. Kreisfreie Stadt (0 für KrfSt) in der Region
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block}
+        \framebreak
+        \begin{block}{Cottbus, AGS 12052000}
+            \begin{description}
+                \item[12] Brandenburg
+                \item[0] Regierungsbezirk (gibt es nicht in BB, deshalb 0)
+                \item[52]  2. Kreisfreie Stadt (5 für KrfSt) in Brandenburg
+                \item[000] kein weiterer Gemeindeschlüssel, da kreisfrei
+            \end{description}
+        \end{block}
+    \end{frame}
+    
