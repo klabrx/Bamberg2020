@@ -1,0 +1,94 @@
+\section{Datenlogistik}
+
+  \begin{frame}{Daten -> Informationen -> Wissen}
+  \metroset{block=fill}
+    \begin{block}{Daten}
+      Daten sind zunächst kontextlose Folgen von Zeichen, Ziffern, Hieroglyphen, Symbolen, Emojies ...
+    \end{block}
+    \begin{block}{Informationen}
+      Werden Daten in einen Kontext\footnote{Dieser Kontext kann aus einer Satzbeschreibung bestehen.} gestellt oder lösen sie weitere Konsequenzen aus, werden sie zu Informationen: Informationen sind Daten mit Kontext.
+    \end{block}
+    \begin{block}{Wissen}
+      Werden Informationen mit anderen Informationen verknüpft oder mit Angaben zu Quellen, Zuverlässigkeit, Entstehungsmethodik, \dots verbunden, entsteht aus Informationen Wissen: Wissen ist geprüfte Information.
+    \end{block}
+  \end{frame}
+
+\begin{frame}[allowframebreaks]{Primäre vs. Sekundäre Daten}
+    \begin{description}
+        \item[Primärdaten] werden eigens für die jeweilige Fragestellung erhoben.
+        \begin{itemize}
+            \item Typische Erhebungsform: Befragung oder Beobachtung
+            \item Beispiele: Bürgerbefragung, Mietspiegelbefragung, Verkehrsfrequenzmessung
+            \item Primärstatistische Stichprobenerhebungen erfordern ausgeprägte Methodenkenntnisse
+            \item Vorteil: Passgenau zur Fragestellung
+            \item Nachteil: Aufwendig und teuer
+        \end{itemize}
+        \framebreak
+        \item[Sekundärdaten] ``liegen bereits vor'', z.B. in Informationssystemen oder Datensammlungen
+        \begin{itemize}
+            \item Beispiele: Arbeitsmarktzahlen, Geschäftsstatistiken, Melderegister, Besucherzahlen
+            \item Nachteil: Erheblich günstiger zu bekommen
+            \item Nachteil: normalerweise ``gekauft wie gesehen und probegefahren'', d.h. weder die Gewinnung noch die Vorab-Aufbereitung ist in größerem Umfang steuerbar.
+        \end{itemize}
+        \framebreak
+        \item[Grundsatz:] Vor jeder Erhebung (Primärdatengewinnung) muss geklärt werden, ob nicht schon Sekundärdaten zur Verfügung stehen.
+    \end{description}
+\end{frame}
+\begin{frame}[allowframebreaks]{Individual- vs. Aggregatdaten}
+    \begin{description}
+        \item[Individualdaten, bzw. Einzeldaten] haben Individuen als Merkmalsträger
+            \begin{itemize}
+                \item typische Merkmalsträger in der Kommunalstatistik: Personen, Kraftfahrzeuge, Unternehmen, Wohnungen
+                \item Herkunft entweder aus Verwaltungsregistern oder aus Befragungen/Erhebungen
+                \item Regelmäßig Grund für gründliche datenschutzrechtliche Begleitung
+                \item Vorteil: Uneingeschränkter und ungefilterter Informationsgehalt für statistische Analysen, hohe Flexibilität bei Aggregation und Verknüpfung
+                \item Beispiele: Ergebnisse einer Bürgerbefragung, Datenabzüge aus dem Melderegister
+            \end{itemize}
+            \framebreak
+        \item[Aggregatdaten] entstehen aus der Verarbeitung, insb. Aggregation von Einzeldaten zu größeren Beobachtungseinheiten
+            \begin{itemize}
+                \item Beispiele: Aggregierung von Einwohnerzahlen auf Stadtteilebene, Wahlergebnisse auf Stimmkreisebene
+                \item Hauptanwendung: Basis für Berichtswesen und statistische Informationssysteme
+                \item Vorteil: Einfachere und schnellere Verarbeitbarkeit, höhere Benutzerfreundlichkeit, bei passender Aufbereitung datenschutzrechtlich unbedenklich
+                \item Nachteil: Mit jeder Aggregationsstufe gehen Detailinformationen verloren, die Eignung als Datenquelle für weitere Auswertungen nimmt rapide ab.
+                
+            
+            \end{itemize}
+    \end{description}
+\end{frame}
+
+  \begin{frame}{Beispiel: Einwohnerdaten}
+  \metroset{block=fill}
+    \begin{block}{Standard-Datensätze}
+      \begin{description}
+        \item[Quelle:] Exportroutine im Melderegister
+        \item[Abruf:] Zwei Optionen
+          \begin{itemize}
+            \item ``Dauerauftrag'' im vorgegebenen Turnus: Datenlieferung entsteht im Meldeamt, Transportweg ist festzulegen und zu sichern
+            \item Eigener Abruf bei Bedarf: Zugang der Statistik zum EWO ist erforderlich, Exportdaten entstehen dafür schon im abgesicherten Bereich.
+          \end{itemize}
+         \item[Plausibilisierung:] Überprüfung/Korrektur von Schreibweisen, Zahlendrehern, evtl. Löschung unerwünschter Datensätze
+         \item[Anreicherung:] Erzeugung zusätzlicher Informationen\footnote{Spätestens ab diesem Zeitpunkt unterliegen die Daten dem Rückspielverbot.}  wie Haushaltszugehörigkeit, Migrationshintergrund
+        \end{description}
+    \end{block}
+  \end{frame}
+  
+    \begin{frame}{Informationelle Selbstbestimmung}
+        \begin{block}{Informationsreduzierung}
+            \begin{itemize}
+                \item Pseudonymisierung durch Entfernen identifizierender Daten (insb. Namen)
+                \item Entfernen von Hilfsmerkmalen
+                \item Aggregation zu Makrodateien (Merkmalskombinationen statt Einzelfällen)
+                \item Ganz allgemein: Abbau von Kontext
+            \end{itemize}
+        \end{block}
+        \begin{block}{Informationsanreicherung}
+            \begin{itemize}
+                \item Deanonymisierung
+                \item Verknüpfung voneinander unabhängiger Datenbestände über Schlüsselmerkmale, Georeferenz, \dots
+                \``Drilldown''
+                \item Ganz allgemein: Aufbau von Kontext
+            \end{itemize}
+        \end{block}
+  \end{frame}
+  

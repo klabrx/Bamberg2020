@@ -11,15 +11,11 @@
         \item[Kleinräumige Gliederung] steht für eine untergemeindliche Gebietseinteilung und Stadtteile, Bezirke, Distrikte, Reviere, Kieze \dots
     \end{description}
 \end{frame}
-
 \begin{frame}{Aus der Beschreibung von AGK}
     \textit{Für zahlreiche Aufgaben in einer Kommune werden aktuelle Informationen vor allem räumlich differenziert und nicht nur für die Gesamtstadt benötigt. \dots Die Kleinräumige Gliederung als Lokalisierungs- und Zuordnungssystem ist ein unverzichtbares Organisationsmittel der Kommunalverwaltung für Statistik, Planung und Verwaltungsvollzug und gründet sich auf Straße, Hausnummer und hierarchischer Gebietsgliederung, d.h. auf die Adresse als Ortsangabe und eine bis zum (Bau-)Block und zur Blockseite differenzierte räumliche Gliederung des gesamten Gemeindegebietes. 
     Aus diesen Grundbestandteilen des statistischen Raumbezugssystems lassen sich alle anderen Gebietseinteilungen des Stadtgebiets wie z. B. Stimmbezirke, Sozialregionen, Verkehrszellen oder Schulsprengel mosaikartig zusammenstellen und dafür die zugehörigen Sachdaten aggregieren.}
 
 \end{frame}
-
-
-
 \begin{frame}{Hierarchischer Aufbau}
     \begin{block}{Das Gebiet der Stadt Passau (AGS 09262000) besteht aus \dots}
         \begin{description}
@@ -33,13 +29,11 @@
 
     
 \end{frame}
-
 \begin{frame}[allowframebreaks]{Ausschnittsbeispiel}
-\includegraphics[width=\textwidth]{images/klgl01.png}
-\framebreak
-\includegraphics[width=\textwidth]{images/klgl02.png}  
+    \includegraphics[width=\textwidth]{images/klgl01.png}
+    \framebreak
+    \includegraphics[width=\textwidth]{images/klgl02.png}  
 \end{frame}
-
 \begin{frame}{Zuordnung von Gebietseinteilungen}
     \metroset{block=fill}
     \begin{alertblock}{Grundsatz 1}
@@ -51,4 +45,25 @@
     \begin{alertblock}{Grundsatz 3}
         Wenn alle Blöcke eines Stadtteils zum selben Gebiet gehören, erfolgt die Zuweisung nicht auf Block- sondern gleich auf Stadtteilebene und wir nach unten weitervererbt.
     \end{alertblock}
+\end{frame}
+\begin{frame}{Rudimentärversion einer KlGl}
+    \begin{table}[]
+        \centering
+        \begin{tabular}{llllll}
+             \textbf{StrID} & \textbf{HsNr} & \textbf{Zusatz} & \textbf{KlGl} & \textbf{Gebiet 1} & \textbf{Gebiet 2} \\
+             12345 & 0001 & C & 1207233 & 01 (Stadtmitte) & \dots \\
+             12345 & 0001 & D & 1207233 & 01 (Stadtmitte) & \dots \\
+             12345 & 0002 &   & 1207234 & 01 (Stadtmitte) & \dots \\
+             12345 & 0003 &   & 1207233 & 01 (Stadtmitte) & \dots \\
+             12345 & 0004 &   & 1207234 & 01 (Stadtmitte) & \dots \\
+             & 
+        \end{tabular}
+    \end{table}
+    In Textformat:
+    \newline
+    \texttt{123450001C 120723301\dots} \newline
+    \texttt{123450001D 120723301\dots} \newline
+    \texttt{123450002  120723301\dots} \newline
+    \texttt{123450003  120723301\dots} \newline
+    \texttt{123450004  120723301\dots}
 \end{frame}
