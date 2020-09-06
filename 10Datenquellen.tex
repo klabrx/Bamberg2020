@@ -21,7 +21,7 @@
         \end{block}
         \begin{block}{Zugekaufte Daten}
             \begin{itemize}
-                \item Handydaten
+                \item Beispiel: Handydaten
                 \item 
             \end{itemize}
         \end{block}
@@ -37,7 +37,162 @@
         \begin{block}{Einzeldatenbezug}
             \begin{itemize}
                 \item An abgeschottete Statistikstellen grundsätzlich möglich, jedoch regelmäßig mit hohem Aufwand verbunden.
-                \item Beispiel: Schülerdaten
+                \item Beispiel: Schülerdaten, Steuerdaten
             \end{itemize}
         \end{block}
+    \end{frame}
+    \begin{frame}{Analyse einer Bestandsdatei}
+        \includegraphics[width=\textwidth]{images/Sample_BEST.PNG}
+    \end{frame}
+    \begin{frame}[allowframebreaks]{Eine Zeile - ein Wohnsitz}
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                 R01 & 09262000 & AGS der Basisgemeinde (BG): Stadt Passau\\
+                 R03U1 & 30513 & Straßenschlüssel für ``Ilzleite''\\
+                 R03U2 & 0053 & Hausnummer\\
+                 R03U3 & .. & Hausnummernzusatz (hier leer) \\
+                 RN1 & 0003 & laufende Nummer an der Basisadresse (BA)\\
+                 R02 & 5200304 & KlGl BA\\
+                 W01 & 1 & Wohnungsstatus (1=HW)\\
+                 W02 & 19991113 & Datum des Einzugs an BA\\
+                 W03 & 19991113 & Datum des letzten Statuswechsels an BA\\
+                 W11 & 09262000 & AGS aktueller HW\\
+                 W12 & ........ & AGS aktuellster NW (hier leer)\\
+                 W13 & 1 & Anzahl Wohnungen in BG\\
+                 W14 & 1 & Anzahl Wohnungen in D\\
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                W31 & 305130021.. & AdressID zuletzt aufgegebene Wohnung in BG\\
+                RQZ & ....... & KlGl dieser Wohnung\\
+                W32 & 1 & Status dieser Wohnung (1=HW)\\
+                W40 & 009 & Gebietsschlüssel Herzugsgebiet (009=Bayern)\\
+                W41 & 09275154 & AGS Herzugsgemeinde (09275154=Vilshofen)\\
+                W42 & .... & Hausnummer der Zuzugswohnung\\
+                W43 & 1 & Status der Zuzugswohnung\\
+                W44 & 19930101 & Datum des ersten Zuzugs in die BG\\
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                P01 & 19650928 & Geburtsdatum\\
+                P02 & 1 & Geschlecht (1=M)\\
+                P09 & 98 & Art der deutschen StaA (98=ohne weiteren Nachweis)\\
+                P10 & 009 & Geburtsland/Region (009=Bayern)\\
+                P03 & 2 & Familienstand (2=VH)\\
+                P04 & 19971205 & \dots seit\\
+                P05 & 000 & Erste StaA\\
+                P06 & 19900820 & Datum Anerkennung Deutsche StaA\\
+                P07 & ...& keine zweite StaA\\
+                P08 & RK & Römisch-Katholisch\\
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                KERNHH & 0002 & Nr. des Kernhaushalts an der BA\\
+                KERNG & 1 & lebt im Kernhh mit Partner(in) (1=ja)\\
+                KERNK & 2 & \dots mit Eltern(teilen) (2=nein)\\
+                KERNE & 1 & \dots mit Nachkommen (1=ja)\\
+                FAMNA01 & 0003 & Nr. des Familiennamens an der BA\\
+                FRFNA01 & 0000 & Nr. des ehem. Familiennamens an der BA\\
+                GEBNA01 & 0000 & Nr. des Geburtsnamens an der BA\\
+                FAMNA02 & .... & Reserve\\
+                FRFNA02 & .... & Reserve\\
+                GEBNA02 & .... & Reserve\\
+                AW17H & ............ & MR-Nr. des nicht mit dem Kind verknüpften E-teils\\
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                KERNS & 1& Position im KernHH (1= Ehepartner mit Nachkommen)\\
+                ANSTE & . & Zugehörigkeit zur Bevölkerung In HH (extern)\\
+                ANSTI & 1 & \dots weder in Heim noch Anstalt\\
+                PKOR & . & Plausi-Korrektur-Markierung\\
+                HHNR & 0002 & Nr. HH an BA\\
+                HZUO & 1 & Zuordnungsstufe (1=aus KernHH MR)\\
+                HPAAR & 1 & Partner(in) in Ehe/ELG\\
+                HELT & 1 & Elternteil\\
+                HVOR & 1 & Vorfahre/Erziehender\\
+                HNACH & 3 & Erwachsener Nachkomme bei/mit E-Teil\\
+                HGESC & 2 & nicht als Geschwister eingestuft\\
+                HGENZ & 2 & zweite Generation\\
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                W04 & 1 & Kommunalstatistische Priorität \\
+                W05 & 1 & Meldepflicht (1=meldepflichtig)\\
+                W06 & 1 & Zugehörigkeit zur StatBev (1=HW)\\
+                W45 & 00010101 & Datum Zuzugs in BRD\\
+                PWAHL & . & Wahlberechtigung - derzeit nicht gefüllt\\
+                AW11 & ............ & Kennung des Familienverbandes\\
+                AW12 & . & Stellung der Person im FamV\\
+                AW13 & . & Zahl der Personen im FamV\\
+                AW14 & . & Zahl der Kinder unter 18 im FamV\\
+                AW15 & 3 & Partner(in) in BG gemeldet (3=VH, P in BG)\\
+                AW16 & . & Kennung des Abfallentsorgungsverbandes\\
+                Z02 & 20191231 & Stichtag des Bestandsabzugs\\
+                AW17 & 52771 & Ordnungsmerkmal\\
+                AW18 & .... & Verfahrensspezifische Nutzung\\
+
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                A01 & 054 & Alter der Person\\
+                A02 & 05 & HHTyp nach HHSTAT (05=Ehepaar+K+wP)\\
+                A03 & 2 & Stellung der Person im HH (2=Partner(in) der BezP)\\
+                A04 & 08 & HHTyp BfLR (08=Paar+K,06-18)\\
+                A05 & 1 & StaA im Haushalt (1=deutscher Haushalt)\\
+                A06 & 05 & Anzahl der Personen im Haushalt\\
+                A07 & 01 & Zahl der Kinder im Haushalt\\
+                NRZ & .... & Nr der in HZUO zugeordneten Person\\
+                PDO & . & Dominante Familienbeziehung (Sikurs)\\
+                HDO & . & Dominante Familienbeziehung (Sikurs)\\
+                R02U2 & . & 8. Stelle der KRG\\
+            \end{tabular}
+        \end{table}
+        \framebreak
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l|l}
+                \textbf{Feld} & \textbf{Wert} & \textbf{Erklärung}\\
+                M01 & 4 & MH der Person (4=Deutsch durch sonst. Nachweis)\\
+                M02 & 4 & MH lt. HHSTAT (4=Deutsch durch sonst. Nachweis)\\
+                P11 & 09275154 & AGS des Geburtsortes\\
+                P12 & VILSHOFEN & Geburtsort\\
+                RQZU2 & . & 8. Stelle zu RQZ\\
+                M03 & 000 & Bezugsland für fam. MH (000=Deutschland)\\
+                M04 & . & Zuwanderungstyp\\
+                M05 & . & Testfeld Vertriebene\\
+                A07X & 00 & Zahl der Kinder nach Altersvorgabe\\
+                A05M & 1 & MH im Haushalt (1=kein MH)\\
+                P0(2|3|5)MR & mVHrk & 3 MR-Merkmale: M, VH, rk)\\
+                FIL337 & ..... & Frei\\
+                Z01BIS & 20200103 & Verarbeitungsdatum Bestandsabzug\\
+                DS350 & * & Datensatzende\\
+                
+            \end{tabular}
+        \end{table}
     \end{frame}
